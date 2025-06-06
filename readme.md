@@ -13,3 +13,4 @@ Currently, it does the following things:
 4. Makes identifier suggestions suggest identifiers from all namespaces instead of just minecraft
 5. Makes all keybinds bound to the same key work even if conflicting
 6. Makes chat history a lot longer
+7. Makes command exceptions log errors if not handled by the command

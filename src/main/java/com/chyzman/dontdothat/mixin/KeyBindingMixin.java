@@ -19,9 +19,6 @@ import static com.chyzman.dontdothat.WhyCantMixinsHaveConstants.REAL_KEYS_MAP;
 
 @Mixin(KeyBinding.class)
 public class KeyBindingMixin {
-    @Shadow
-    @Final
-    private static Map<InputUtil.Key, KeyBinding> KEY_TO_BINDINGS;
 
     @Shadow private InputUtil.Key boundKey;
 
