@@ -84,7 +84,7 @@ public abstract class GameOptionsMixin {
                 return current;
             }
         });
-        keys.forEach(s -> unknown.put(s, data.get().getString(s)));
+        keys.forEach(s -> unknown.put(s, data.get().getString(s).orElse("")));
     }
 
     @Inject(method = "write", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/option/GameOptions;accept(Lnet/minecraft/client/option/GameOptions$Visitor;)V"))
